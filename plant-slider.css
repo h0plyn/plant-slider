@@ -1,0 +1,21 @@
+.plant-slider {
+  display: inline-block;
+  width: auto;
+  height: 75vh;
+  max-height: 768px;
+  cursor: e-resize;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+}
+.plant-slider .slide {
+  position: relative;
+  height: 100%;
+}
+.plant-slider .slide img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:none;
+}
