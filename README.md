@@ -10,6 +10,16 @@ Next include the css file:
 <link rel="stylesheet" type="text/css" href="plantslider.min.css">
 ```
 ## How to use
+Set up your HTML like this:
+```html5
+<div class="foo">
+  <div class="slide">
+    <img src="foo.jpg" alt="foo" />
+    <img src="bar.com" alt="bar" />
+  </div>
+  <ul class="plant-slider-ui"></ul>
+</div>
+```
 Initialize a single slider by calling the element ID:
 ```js
 $(document).ready( function() {
@@ -28,3 +38,4 @@ $(document).ready( function() {
   $('.bar').plantSlider();
 });
 ```
+Check the example in the index.html file to see it all put together.
