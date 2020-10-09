@@ -1,100 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Plant - Slider</title>
-  <link rel="stylesheet" type="text/css" href="plantslider.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-    body {
-      font-family: 'Roboto Condensed';
-    }
-    header {
-      margin-top: 35vh;
-    }
-    h1,p {
-      text-align: center;
-      max-width: 600px;
-      padding: 15px;
-      margin: 0 auto;
-      font-size: 90px;
-    }
-    p {
-      text-align: justify;
-      line-height: 1.5;
-      font-size: 20px;
-    }
-    p:first-of-type {
-      margin-top: 15vh;
-    }
-    code {
-      font-family: monospace;
-      position: relative;
-      background: #F2DFDB;
-      padding: 3px 5px 4px;
-      top: -2px;
-    }
-    section {
-      padding: 15px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    article {
-      width: calc(100% - 30px);
-      margin: 0 auto;
-    }
-    article div.plant-slider {
-      width: 50%;
-      float: left;
-    }
-    article div.plant-slider:nth-child(even) {
-      width: 33%;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Plant Slider</h1>
-    <p>Bare bones responsive image slider with room to grow. Click to progress through the slides and go back to the start. Dots represent the number of slides, and the slide you are currently viewing. This was made specifically for a site.</p>
-    <p>Initialize with <code>$('.your-class').plantSlider();</code> Use the same class for multiple sliders on a single page.</p>
-  </header>
-  <section>
-    <div class="plant-slider">
-      <h3>Example 001</h3>
-      <div class="slide">
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590172/faan_vid1_screenshot_02.jpg" />
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590150/faan_vid1_screenshot_10.jpg" />
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590172/faan_vid1_screenshot_08.jpg" />
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590172/faan_vid1_screenshot_09.jpg" />
+  <head>
+    <title>MY Plant - Slider</title>
+    <link rel="stylesheet" type="text/css" href="plantslider.min.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+      body {
+        font-family: "Roboto Condensed";
+      }
+      header {
+        margin-top: 35vh;
+      }
+      h1,
+      p {
+        text-align: center;
+        max-width: 600px;
+        padding: 15px;
+        margin: 0 auto;
+        font-size: 90px;
+      }
+      p {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 20px;
+      }
+      p:first-of-type {
+        margin-top: 15vh;
+      }
+      code {
+        font-family: monospace;
+        position: relative;
+        background: #f2dfdb;
+        padding: 3px 5px 4px;
+        top: -2px;
+      }
+      section {
+        padding: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      article {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+      }
+      article div.plant-slider {
+        width: 50%;
+        float: left;
+      }
+      article div.plant-slider:nth-child(even) {
+        width: 33%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Plant Slider</h1>
+      <p>
+        Bare bones responsive image slider with room to grow. Click to progress
+        through the slides and go back to the start. Dots represent the number
+        of slides, and the slide you are currently viewing. This was made
+        specifically for a site.
+      </p>
+      <p>
+        Initialize with <code>$('.your-class').plantSlider();</code> Use the
+        same class for multiple sliders on a single page.
+      </p>
+    </header>
+    <section>
+      <div class="plant-slider">
+        <h3>Example 001</h3>
+        <div class="slide">
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590172/faan_vid1_screenshot_02.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590150/faan_vid1_screenshot_10.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590172/faan_vid1_screenshot_08.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590172/faan_vid1_screenshot_09.jpg"
+          />
+        </div>
+        <ul class="plant-slider-ui"></ul>
       </div>
-      <ul class="plant-slider-ui"></ul>
-    </div>
-    <div class="plant-slider">
-      <h3>Example 002</h3>
-      <div class="slide">
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535757900/Screen-Shot-2018-01-09-at-5.59.35-PM%20Copy.jpg" />
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535758176/gh-aphex_twin_forage_press-001%20copy.jpg" />
+      <div class="plant-slider">
+        <h3>Example 002</h3>
+        <div class="slide">
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535757900/Screen-Shot-2018-01-09-at-5.59.35-PM%20Copy.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535758176/gh-aphex_twin_forage_press-001%20copy.jpg"
+          />
+        </div>
+        <ul class="plant-slider-ui"></ul>
       </div>
-      <ul class="plant-slider-ui"></ul>
-    </div>
-    <div class="plant-slider">
-      <h3>Example 003</h3>
-      <div class="slide">
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590798/logo-plants.jpg" />
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590789/logo-others.jpg" />
-        <img src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590798/logo-plants-icon.jpg" />
+      <div class="plant-slider">
+        <h3>Example 003</h3>
+        <div class="slide">
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590798/logo-plants.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590789/logo-others.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpelokzqt/image/upload/c_scale,w_auto:100,dpr_auto/v1535590798/logo-plants-icon.jpg"
+          />
+        </div>
+        <ul class="plant-slider-ui"></ul>
       </div>
-      <ul class="plant-slider-ui"></ul>
-    </div>
-  </section>    
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="plantslider.min.js"></script>
-  <script>
-    $(document).ready( function() {
-	    $('.plant-slider').plantSlider();
-    });
-  </script>
-</body>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="plantslider.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".plant-slider").plantSlider();
+      });
+    </script>
+  </body>
 </html>
